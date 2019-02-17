@@ -1,0 +1,169 @@
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #2b2d25;
+    background-color: #e5eaef;
+}
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/books.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 30px;
+    font-weight: 400;
+    font-size: 250%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+
+}
+
+/* ---------------------------------------- */
+/* FORM */
+/* ---------------------------------------- */
+
+*:focus {outline: none;}
+
+form {
+    background-color: #71AA97;
+    font-weight: 300;
+    width: 70%;
+    margin: 25px auto;
+    padding: 40px;
+    border: 0.5px solid #133253;
+    border-radius: 5px;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    font-family: inherit;
+    font-size: 70%;
+    border: 0.5px solid #133253;
+    border-radius: 5px;
+    margin: 25px 0;
+    padding: 10px;
+    font-weight: 400;
+    color: #133253;
+}
+
+form input[type=submit] {
+    width: 30%;
+    height: 60px;
+    margin: 50px 35% 15px 35%;
+    background-color: #267158;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+form input[type=submit]:hover {
+    background-color: #1d5844;
+    cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* BOOK LIST */
+/* ---------------------------------------- */
+
+table {
+    position: absolute;
+    top: 1000px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-radius: 15px
+    color: #2b2d25;
+    border-spacing: 0;
+}
+
+tr:nth-child(odd) {
+    background-color: #8BBAA9;
+}
+
+tr:nth-child(even) {
+    background-color: #BFDAD0;
+}
+
+th {
+    font-weight: 300;
+    color: #fff;
+    background-color: #2B4C6F;
+}
+
+td {
+    padding: 10px;
+    font-size: 80%;
+    font-weight: 300;
+    text-align: center;
+}
+
+thead th:last-child,
+td:last-child {
+    display: flex;
+}
+
+#filter {
+    font-size: 70%;
+    padding: 10px;
+    margin-left: auto;
+    width: 200px;
+    font-weight: 400;
+    color: #133253;
+    border: 0.5px solid #133253;
+}
+
+.icon-delete {
+    color: #133253;
+    transition: all 0.2s;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.icon-delete:hover {
+    color: rgba(255,0,0,0.6);
+}
+
+/* ---------------------------------------- */
+/* VALIDATION */
+/* ---------------------------------------- */
+
+.container {
+    display: flex;
+}
+
+.success,
+.error {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    margin: 40px auto; /* auto centers the message in flexbox */
+    border-radius: 10px;
+}
+
+.success {
+    background-color: rgba(0,255,0,0.4);
+}
+
+.error {
+    background-color: rgba(255,0,0,0.6);
+}
