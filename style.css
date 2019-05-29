@@ -167,3 +167,13 @@ td:last-child {
 .error {
     background-color: rgba(255,0,0,0.6);
 }
+
+/* ---------------------------------------- */
+/* RESPONSIVENESS */
+/* ---------------------------------------- */
+
+@media(max-width: 500px) {
+    html {
+        font-size: 1.4em;
+    }
+}
